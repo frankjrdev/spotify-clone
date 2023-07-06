@@ -7,7 +7,9 @@
   </ul>
   <ul
     class="play-list-rows"
-    *ngFor="let track of tracks | orderList : 'title' : 'asc'"
+    *ngFor="
+      let track of tracks | orderList : optionSort.property : optionSort.order
+    "
   >
     <li class="track-name">
       <ng-container

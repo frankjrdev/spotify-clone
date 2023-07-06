@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { TrackModel } from '../../../core/models/tracks.model';
-import * as dataJson from '../../../data/tracks.json';
+
 
 @Component({
   selector: 'app-play-list-body',
@@ -14,8 +14,7 @@ export class PlayListBodyComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    const { data }: any = (dataJson as any).default
-    this.tracks = data;
+
   }
 
 
